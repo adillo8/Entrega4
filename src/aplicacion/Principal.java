@@ -51,19 +51,63 @@ public class Principal {
         //Ejercicio 47
         System.out.println("se utiliza para describir el comportamiento asintótico de una función t y otra f");
 
-        //Ejercicio 48 ?????
-        //Ejercicio 49 ??????
-        //Ejercicio 50 ????
+        //Ejercicio 48
+        System.out.println("parece de tipo exponencial(n^2) el ritmo al que crece el tiempo es exponencialmente mayor al ritmo de crecimiento de los inputs");
+
+        //Ejercicio 49
+        System.out.println("se utiliza para describir el comportamiento asintótico de una función t y otra f");
+        
+        //Ejercicio 50
+            // Respuesta 1
+            int k = 3;
+            int n0 = 2;
+            System.out.println("1. Encontrar k y n0 que muestren que la función T(n) = 3 * log2(n) + 2 es de orden O(log2(n)):");
+            System.out.println("k = " + k + ", n0 = " + n0);
+
+            // Respuesta 2
+            System.out.println("\n2. ¿Si T(n) ∈ O(log2(n)), entonces T(n) ∈ O(n)? Justifique la respuesta:");
+            System.out.println("No porque aunque O(log2(n)) siempre esté debajo de O(n), la notación Big O se refiere a la cota superior cuando n tiende a infinito.");
+
+            // Respuesta 3
+            System.out.println("\n3. ¿Si T(n) ∈ O(log3(n)), entonces T(n) ∈ O(log2(n))? Justifique la respuesta:");
+            System.out.println("Sí, porque si T(n) está en O(log3(n)), su crecimiento sería proporcional a una constante (k), lo cual cumple con la definición de O(log2(n)).");
 
         //Ejercicio 51
         System.out.println("el orden de crecimiento de estas funciones de menor a mayor es: f(0)<f(1)<f(2)<f(3)<f(4)"); 
         
         //Ejercicio 52
+        System.out.println(Mates.f(3));
 
         //Ejercicio 53
         System.out.println("En un Arraylist ordenado la inserción en la posición correcta puede requerir un tiempo lineal en el peor de los casos, ya que puede ser necesario desplazar todos los elementos para abrir espacio mientras que en un  ArrayList no ordenado, la inserción al final del ArrayList es constante en el tiempo promedio, pero lineal en el peor caso");
 
         //Ejercicio 54
+        // Para n = 100
+        System.out.println("Para n = 100:");
+        System.out.println("1. log(n) -> log(100) = 2 llamadas = 100 ns");
+        System.out.println("2. n -> 100 llamadas = 1.000 ns");
+        System.out.println("3. nlog(n) -> 100 * log(100) = 200 llamadas = 10.000 ns");
+        System.out.println("4. n^2 -> 100 * 100 = 10.000 llamadas = 100.000 ns");
+        System.out.println("5. n^8 -> 100^8 = 100.000.000.000 llamadas = 1.000.000.000.000 ns");
+        System.out.println("6. 10^n -> 10^100 llamadas = 10^101 ns");
+        
+        // Para n = 100.000
+        System.out.println("Para n = 100.000:");
+        System.out.println("1. log(n) -> log(100.000) = 10 llamadas = 100.000 ns");
+        System.out.println("2. n -> 100.000 llamadas = 1.000.000 ns");
+        System.out.println("3. nlog(n) -> 10^5 * 10^4 llamadas = 10^10 ns");
+        System.out.println("4. n^2 -> 10^10 llamadas = 10^11 ns");
+        System.out.println("5. n^8 -> 10^390625 llamadas = 10^390626 ns");
+        System.out.println("6. 10^n -> 10^100.000 llamadas = 10^100.001 ns");
+
+        // Para n = 100.000 y tiempo de instrucción de 1 ms
+        System.out.println("\nPara n = 100.000 y tiempo de instrucción de 1 ms:");
+        System.out.println("1. log(n) -> log(100.000) = 10.000 llamadas = 10.000 ms = 10 s");
+        System.out.println("2. n -> 100.000 llamadas = 100 s");
+        System.out.println("3. nlog(n) -> 10^5 * 10^4 llamadas = 10^6 s");
+        System.out.println("4. n^2 -> 10^10 llamadas = 10^7 s");
+        System.out.println("5. n^8 -> 10^390625 llamadas = 10^390622 s");
+        System.out.println("6. 10^n -> 10^100.000 llamadas = 10^999.997 s");
 
         //Ejercicio 55
         System.out.println(" El número de posiciones posibles en el ajedrez es extremadamente grande, lo que hace que sea computacionalmente imposible examinar exhaustivamente todas las posibles combinaciones de movimientos. Por lo tanto, el ajedrez es un problema NP-completo.");

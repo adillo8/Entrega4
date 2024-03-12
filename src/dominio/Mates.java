@@ -21,6 +21,15 @@ public class Mates {
         }
     }
 
+    public static int f(int n) {
+        if (n == 0) return 1;
+        else if (n < 0) return -1;
+        else{
+            int m = 1/f(n/2) + f(n/2);
+            return sumaIterativa(m);
+        }
+    }
+
 }
 
 
